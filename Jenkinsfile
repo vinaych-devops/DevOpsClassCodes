@@ -1,6 +1,9 @@
 pipeline{
 	agent any
-      stages{
+	tools{
+		maven "maven-vch"
+	}
+		stages{
            stage('Checkout'){
 	    
                steps{
